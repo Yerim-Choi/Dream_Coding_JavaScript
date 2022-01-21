@@ -1,7 +1,7 @@
 // 1. Use strict
 "use-strict";
 
-// 2. Variable : 변수
+// 2. Variable : 변수 rw(read/write) 값을 쓰고 읽는게 가능
 // let (added in ES6)
 let globalName = 'global name'
 
@@ -21,7 +21,15 @@ let globalName = 'global name'
 { age = 4; var age; }
 console.log(age)
 
-// 3. Contants
+// 3. Contant, r(read Only)
+// use const whenever possible.
+// only use let if variavle needs to change.
+const daysInWeek = 7;
+const maxNumber = 5;
+
+// Note!
+// Immutable data types : premitive types, frozen objects ( i.e object.freeze())
+// Mutable data types: all objects bt default are mutable in JS
 // favor immutable data type always for a few reasons;
 // - securiy : 보안상의 이유 해커들이 다른 값을 넣어 변경하는것을 방지
 // - thread safety : 값을 동시에 변경하는 것은 위험이 있을 수 있음
@@ -29,7 +37,7 @@ console.log(age)
 
 // 4. Variable types 자바스크립트 데이터 타입
 // primitive, single item: number, string, boolean, null, undefined, symbol
-// object, box container
+// object, box container  메모리에 
 // function, first-class function
 
 // number
