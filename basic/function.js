@@ -1,4 +1,4 @@
-// Basic 1. 변수 | primitive 타입과 object의 차이점
+// Basic 2. 변수 | primitive 타입과 object의 차이점
 
 // function
 // 반복되는 로직에 있어서 함수로 생성
